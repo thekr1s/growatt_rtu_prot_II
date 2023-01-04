@@ -113,7 +113,7 @@ class GrowattRS232:
             )
         )
 
-    async def async_update(self):
+    def sync_update(self):
         """
         Read Growatt data.
 
