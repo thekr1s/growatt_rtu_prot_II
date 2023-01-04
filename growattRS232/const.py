@@ -13,6 +13,7 @@ ATTR_STATUS = "status"
 ATTR_STATUS_CODE = "status_code"
 
 ATTR_INPUT_POWER = "input_power"  # W
+ATTR_INPUT_ENERGY_TODAY = "input_energy_today"  # kWh
 ATTR_INPUT_ENERGY_TOTAL = "input_energy_total"  # kWh
 
 ATTR_INPUT_1_VOLTAGE = "input_1_voltage"  # V

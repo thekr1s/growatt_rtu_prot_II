@@ -26,6 +26,7 @@ from growattRS232.const import (
     ATTR_INPUT_2_POWER,
     ATTR_INPUT_2_VOLTAGE,
     ATTR_INPUT_ENERGY_TOTAL,
+    ATTR_INPUT_ENERGY_TODAY,
     ATTR_INPUT_POWER,
     ATTR_IPM_TEMPERATURE,
     ATTR_MODEL_NUMBER,
@@ -213,6 +214,7 @@ class GrowattRS232:
         
         # DC input PV
         data[ATTR_INPUT_POWER] = rsdf(rir1, 1)
+        data[ATTR_INPUT_ENERGY_TODAY] = rsdf(rir1, 53)
         data[ATTR_INPUT_ENERGY_TOTAL] = rsdf(rir1, 55)
 
         # AC output grid
