@@ -9,8 +9,8 @@ from datetime import datetime
 from pymodbus.client.sync import ModbusSerialClient as ModbusClient
 
 from growattRS232.const import (
-    ATTR_DERATING,
-    ATTR_DERATING_MODE,
+    # ATTR_DERATING,
+    # ATTR_DERATING_MODE,
     ATTR_FAULT,
     ATTR_FAULT_CODE,
     ATTR_FIRMWARE,
@@ -44,23 +44,23 @@ from growattRS232.const import (
     ATTR_OUTPUT_ENERGY_TODAY,
     ATTR_OUTPUT_ENERGY_TOTAL,
     ATTR_OUTPUT_POWER,
-    ATTR_OUTPUT_REACTIVE_ENERGY_TODAY,
-    ATTR_OUTPUT_REACTIVE_ENERGY_TOTAL,
-    ATTR_OUTPUT_REACTIVE_POWER,
+    # ATTR_OUTPUT_REACTIVE_ENERGY_TODAY,
+    # ATTR_OUTPUT_REACTIVE_ENERGY_TOTAL,
+    # ATTR_OUTPUT_REACTIVE_POWER,
     ATTR_P_BUS_VOLTAGE,
     ATTR_SERIAL_NUMBER,
     ATTR_STATUS,
     ATTR_STATUS_CODE,
     ATTR_TEMPERATURE,
-    ATTR_WARNING,
-    ATTR_WARNING_CODE,
-    ATTR_WARNING_VALUE,
+    # ATTR_WARNING,
+    # ATTR_WARNING_CODE,
+    # ATTR_WARNING_VALUE,
     DEFAULT_ADDRESS,
     DEFAULT_PORT,
-    DERATINGMODES,
+    # DERATINGMODES,
     FAULTCODES,
     STATUSCODES,
-    WARNINGCODES,
+    # WARNINGCODES,
 )
 
 
@@ -196,7 +196,6 @@ class GrowattRS232:
             self._client.close()
             self._logger.debug("Modbus read failed for rir1.")
             raise ModbusException("Modbus read failed for rir1.")
-
 
         self._client.close()
 
