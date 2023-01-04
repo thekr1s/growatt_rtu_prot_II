@@ -210,7 +210,7 @@ class GrowattRS232:
 
     def input_regs_to_data(self, rir1):
         data = {}
-        
+
         # DC input PV
         data[ATTR_INPUT_POWER] = rsdf(rir1, 1)
         data[ATTR_INPUT_ENERGY_TODAY] = rsdf(rir1, 53)
